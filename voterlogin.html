@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Voter Login Form</title>
+</head>
+<body>
+  <h2>Voter Login</h2>
+  
+  <form id="voter-form" action="submit.php" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="voter-id">Voter ID:</label>
+    <input type="text" id="voter-id" name="voter-id" required><br><br>
+    
+    <label for="postal-address">Postal Address:</label>
+    <textarea id="postal-address" name="postal-address" required></textarea><br><br>
+    
+    <label for="constitution-name">Constitution Name:</label>
+    <input type="text" id="constitution-name" name="constitution-name" required><br><br>
+    
+    <label for="mobile-number">Mobile Number:</label>
+    <input type="tel" id="mobile-number" name="mobile-number" required><br><br>
+    
+    <label for="email">Email ID:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <label for="aadhar-number">Aadhar Number:</label>
+    <input type="text" id="aadhar-number" name="aadhar-number" required><br><br>
+    
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset">
+  </form>
+  
+  <p>Already have a Voter Card:</p>
+  <button onclick="redirectToLoginPage()">Log In</button>
+  
+  <script>
+    function redirectToLoginPage() {
+      window.location.href = "login.html";
+    }
+  </script>
+</body>
+</html>
